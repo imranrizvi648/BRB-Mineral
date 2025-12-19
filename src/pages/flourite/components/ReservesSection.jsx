@@ -73,7 +73,7 @@ export default function Reserves() {
                 w-full 
                 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg
                 rounded-xl shadow-lg object-cover
-               h-[280px] sm:h-[320px] md:h-[360px]
+               h-[280px] sm:h-80 md:h-[360px]
               "
             />
           </div>
@@ -101,7 +101,7 @@ export default function Reserves() {
         {/* BANNER SECTION */}
         <section
           ref={bannerRef}
-          className="relative mx-auto w-full h-auto md:h-[200px] rounded-xl mt-12 md:mt-30 sm:mt-14 md:mt-30 overflow-hidden"
+          className="relative mx-auto w-full h-auto md:h-[200px] rounded-xl mt-12 md:mt-30 sm:mt-14  overflow-hidden"
         >
           <img
             src="/flouritePage/natural resouse.webp"

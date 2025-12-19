@@ -6,7 +6,7 @@ const ImportantFlourite = lazy(() => import("./components/ImportandFlourite"));
 const FlouriteBenefitsSection = lazy(() => import("./components/FluoriteBenefitsSection"));
 const Reserves = lazy(() => import("./components/ReservesSection"));
 
-export default function flouritePage  (){
+export default function FlouritePage(){
   return (
     <div>
 

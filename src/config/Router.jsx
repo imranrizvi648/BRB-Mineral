@@ -3,9 +3,10 @@ import Layout from "../Layout/Layout";
 
 //mineral pages
 import Home from "../pages/home/homePage";
-import FlouritePage from "../pages/Flourite/flouritePage";
+// import FlouritePage from "../pages/Flourite/flouritePage";
 import PhosphatePage from "../pages/Phosphate/PhosphatePage"
 import IronPage from "../pages/Iron/ironPage";
+import FlouritePage from "../pages/Flourite/flouritePage";
 import Barite from "../pages/Barite/baritePage"
 import BauxitePage from "../pages/Bauxite/BauxitePage";
 import TalcPage from "../pages/Talc/talcPage";
@@ -40,8 +41,9 @@ export default function App() {
        // mineral Routes
         <Route index element={<Home />} />
          <Route path="/mineral" element={<Home />} />
-        <Route path="/mineral/flourite" element={<FlouritePage />} />
+        {/* <Route path="/mineral/flourite" element={<FlouritePage />} /> */}
          <Route path="/mineral/phosphate" element={<PhosphatePage />} />
+         <Route path="/mineral/flourite" element={<FlouritePage/>}/>
          <Route path="/mineral/iron" element={<IronPage />} />
          <Route path="/mineral/barite" element={<Barite />} />
          <Route path="/mineral/bauxite" element={<BauxitePage />} />

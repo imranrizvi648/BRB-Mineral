@@ -38,7 +38,7 @@ const FluoriteBenefitsSection = () => {
       {/* Line Under Heading */}
       <div
         className={`
-          h-1 bg-gradient-to-r from-[#7FBD68] to-[#25949B] mt-2 mb-5 sm:mb-6
+          h-1 bg-linear-to-r from-[#7FBD68] to-[#25949B] mt-2 mb-5 sm:mb-6
           transition-all duration-1000 ease-out delay-200
           ${isVisible ? "opacity-100 w-14 sm:w-16" : "opacity-0 w-0"}
         `}

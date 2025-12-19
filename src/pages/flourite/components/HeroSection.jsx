@@ -25,7 +25,7 @@ export default function HeroSection() {
       ref={sectionRef}
       className="
         relative w-full 
-        bg-gradient-to-br from-slate-50 via-white to-cyan-50
+        bg-linear-to-br from-slate-50 via-white to-cyan-50
         px-6 md:px-14 py-10 md:py-16 md:pb-20 
         overflow-hidden
       "
@@ -35,7 +35,7 @@ export default function HeroSection() {
       {/* Falling Stones/Rocks */}
       <div className="absolute inset-0 pointer-events-none opacity-20">
         <div 
-          className="absolute w-8 h-10 bg-gradient-to-br from-[#03A2A7] to-[#0c3c52] rounded-tl-3xl rounded-br-3xl"
+          className="absolute w-8 h-10 bg-linear-to-br from-[#03A2A7] to-[#0c3c52] rounded-tl-3xl rounded-br-3xl"
           style={{ 
             top: '-50px',
             left: '15%',
@@ -44,7 +44,7 @@ export default function HeroSection() {
           }}
         ></div>
         <div 
-          className="absolute w-6 h-8 bg-gradient-to-br from-[#0c3c52] to-[#03A2A7]"
+          className="absolute w-6 h-8 bg-linear-to-br from-[#0c3c52] to-[#03A2A7]"
           style={{ 
             top: '-60px',
             left: '35%',
@@ -54,7 +54,7 @@ export default function HeroSection() {
           }}
         ></div>
         <div 
-          className="absolute w-7 h-9 bg-gradient-to-br from-[#03A2A7] to-[#0c3c52]"
+          className="absolute w-7 h-9 bg-linear-to-br from-[#03A2A7] to-[#0c3c52]"
           style={{ 
             top: '-40px',
             left: '55%',
@@ -64,7 +64,7 @@ export default function HeroSection() {
           }}
         ></div>
         <div 
-          className="absolute w-9 h-11 bg-gradient-to-br from-[#0c3c52] to-[#03A2A7]"
+          className="absolute w-9 h-11 bg-linear-to-br from-[#0c3c52] to-[#03A2A7]"
           style={{ 
             top: '-70px',
             left: '75%',
@@ -74,7 +74,7 @@ export default function HeroSection() {
           }}
         ></div>
         <div 
-          className="absolute w-5 h-7 bg-gradient-to-br from-[#03A2A7] to-[#0c3c52]"
+          className="absolute w-5 h-7 bg-linear-to-br from-[#03A2A7] to-[#0c3c52]"
           style={{ 
             top: '-55px',
             left: '85%',
@@ -90,7 +90,7 @@ export default function HeroSection() {
         {[...Array(15)].map((_, i) => (
           <div
             key={i}
-            className="absolute bg-gradient-to-br from-[#03A2A7] to-[#0c3c52]"
+            className="absolute bg-linear-to-br from-[#03A2A7] to-[#0c3c52]"
             style={{
               width: `${4 + Math.random() * 6}px`,
               height: `${4 + Math.random() * 6}px`,
@@ -132,7 +132,7 @@ export default function HeroSection() {
             animation: 'rotateFacet 15s linear infinite'
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-br from-[#03A2A7] via-transparent to-[#0c3c52] opacity-30"></div>
+          <div className="absolute inset-0 bg-linear-to-br from-[#03A2A7] via-transparent to-[#0c3c52] opacity-30"></div>
         </div>
         <div 
           className="absolute bottom-[25%] right-[15%] w-28 h-28 border-2 border-[#0c3c52]"
@@ -141,7 +141,7 @@ export default function HeroSection() {
             animation: 'rotateFacet 18s linear infinite reverse'
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-br from-[#0c3c52] via-transparent to-[#03A2A7] opacity-30"></div>
+          <div className="absolute inset-0 bg-linear-to-br from-[#0c3c52] via-transparent to-[#03A2A7] opacity-30"></div>
         </div>
         <div 
           className="absolute top-[60%] left-[60%] w-20 h-20 border-2 border-[#03A2A7]"
@@ -150,7 +150,7 @@ export default function HeroSection() {
             animation: 'rotateFacet 12s linear infinite'
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-br from-[#03A2A7] via-transparent to-[#0c3c52] opacity-30"></div>
+          <div className="absolute inset-0 bg-linear-to-br from-[#03A2A7] via-transparent to-[#0c3c52] opacity-30"></div>
         </div>
       </div>
 
@@ -175,11 +175,11 @@ export default function HeroSection() {
 
       {/* Gradient Orbs - Stone Deposits */}
       <div 
-        className="absolute top-0 left-0 w-[380px] h-[380px] bg-gradient-to-br from-[#03A2A7] to-transparent opacity-10 rounded-full blur-3xl"
+        className="absolute top-0 left-0 w-[380px] h-[380px] bg-linear-to-br from-[#03A2A7] to-transparent opacity-10 rounded-full blur-3xl"
         style={{ animation: 'pulse 10s ease-in-out infinite' }}
       ></div>
       <div 
-        className="absolute bottom-0 right-0 w-[460px] h-[460px] bg-gradient-to-tl from-[#0c3c52] to-transparent opacity-10 rounded-full blur-3xl"
+        className="absolute bottom-0 right-0 w-[460px] h-[460px] bg-linear-to-tl from-[#0c3c52] to-transparent opacity-10 rounded-full blur-3xl"
         style={{ animation: 'pulse 12s ease-in-out infinite 2s' }}
       ></div>
 
@@ -212,7 +212,7 @@ export default function HeroSection() {
       <div
         className="
           relative grid grid-cols-1 md:grid-cols-2 
-          gap-10 items-center z-[2]
+          gap-10 items-center z-2
           md:max-w-[91%] mx-auto
         "
       >
@@ -252,7 +252,7 @@ export default function HeroSection() {
         {/* RIGHT IMAGE */}
         <div className="flex justify-center md:justify-end relative md:mt-3">
           {/* Glow behind Img */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#03A2A7] to-[#0c3c52] opacity-20 blur-2xl rounded-xl scale-[1.1]"></div>
+          <div className="absolute inset-0 bg-linear-to-r from-[#03A2A7] to-[#0c3c52] opacity-20 blur-2xl rounded-xl scale-[1.1]"></div>
 
           {/* IMAGE WRAPPER */}
           <div className="relative">
