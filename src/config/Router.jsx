@@ -3,7 +3,7 @@ import Layout from "../Layout/Layout";
 
 //mineral pages
 import Home from "../pages/home/homePage";
-import FlouritePage from "../pages/flourite/FlouritePage";
+import FlouritePage from "../pages/Flourite/flouritePage";
 import PhosphatePage from "../pages/Phosphate/PhosphatePage"
 import IronPage from "../pages/Iron/ironPage";
 import Barite from "../pages/Barite/baritePage"
