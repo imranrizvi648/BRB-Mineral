@@ -34,11 +34,11 @@ const Navbar = () => {
   return (
     <>
       <section
-        className="w-full relative z-50"
+        className="w-full relative z-50 bg-[#F7F8F9]"
         onMouseLeave={() => setOpenMenu(null)}
       >
         {/* TOP NAV */}
-        <nav className="w-full bg-[#F7F8F9] md:w-[97%] py-3 md:py-12 gap-6  md:gap-10 px-4 md:ml-10 flex items-center justify-between">
+        <nav className="w-full  md:w-[97%] py-3 md:py-12 gap-6  md:gap-10 px-4 md:ml-10 flex items-center justify-between">
           {/* LOGO */}
           <div className="flex items-center">
             <img
@@ -194,7 +194,7 @@ const Navbar = () => {
                 </li>
                 <li className="hover:text-gray-800">
                   <a href="https://brbgroup.org/brb-marketing-pvt-ltd/">
-                    BRB Markeeting
+                    BRB Marketing
                   </a>
                 </li>
                 <li className="hover:text-gray-800">
@@ -268,28 +268,43 @@ const Navbar = () => {
 
                   {/* MINI DROPDOWN */}
                   {subOpen === "const" && (
-                    <div className="absolute left-full top-1/2 -translate-y-1/2 ml-5 mt-5 w-48 bg-white shadow-lg p-4 ">
-                      <ul className="text-sm space-y-1">
-                        <li className="border-b-amber-100">
-                          <a href="#">Black Stone</a>
-                        </li>
-                        <li>
-                          <a href="#">White Stone</a>
-                        </li>
-                        <li>
-                          <a href="#">Grey Stone</a>
-                        </li>
-                        <li>
-                          <a href="#">Granite Stone</a>
-                        </li>
-                      </ul>
+                     <div className="absolute left-full top-[50%]  -translate-y-1/3 p-4 pt-0 gap-2 z-50 flex-col ml-0 text-sm flex bg-white shadow-lg rounded-md w-48 ">
+                      <li className="hover:text-gray-700 cursor-pointer border-b-2 border-gray-200">
+                        <Link to="" className="hover:text-gray-700">
+                          Construction Servives
+                        </Link>
+                      </li>
+                      <li className="hover:text-gray-700 cursor-pointer border-b-2 border-gray-200">
+                        <Link
+                          to="#"
+                          className="hover:text-gray-700"
+                        >
+                          Real Estate Development
+                        </Link>
+                      </li>
+                      <li className="hover:text-gray-700 cursor-pointer border-b-2 border-gray-200">
+                        <Link
+                          to="#"
+                          className="hover:text-gray-700"
+                        >
+                         Project Management
+                        </Link>
+                      </li>
+                         <li className="hover:text-gray-700 cursor-pointer border-b-2 border-gray-200">
+                        <Link
+                          to="#"
+                          className="hover:text-gray-700"
+                        >
+                         Consulting Services
+                        </Link>
+                      </li>
                     </div>
                   )}
                 </li>
 
                 {/* ITEM 2 */}
                 <li
-                  className="flex items-center gap-2 hover:text-gray-800 relative"
+                  className="relative flex items-center gap-2 hover:text-gray-800"
                   onMouseEnter={() => setSubOpen("ict")}
                   onMouseLeave={() => setSubOpen(null)}
                 >
@@ -299,22 +314,108 @@ const Navbar = () => {
                   </a>
 
                   {subOpen === "ict" && (
-                    <div className="absolute left-full top-1/2 -translate-y-1/2 ml-5 w-48 bg-white shadow-lg  p-4 rounded-lg">
-                      <p className="font-semibold mb-2">Stones</p>
-                      <ul className="text-sm space-y-1">
-                        <li>
-                          <a href="#">Black Stone</a>
-                        </li>
-                        <li>
-                          <a href="#">White Stone</a>
-                        </li>
-                        <li>
-                          <a href="#">Grey Stone</a>
-                        </li>
-                        <li>
-                          <a href="#">Granite Stone</a>
-                        </li>
-                      </ul>
+                   <div className="absolute left-full top-[30%]  -translate-y-1/2 p-4 pt-0 gap-2 z-50 flex-col ml-0 text-sm flex bg-white shadow-lg rounded-md w-48 ">
+                      <li className="hover:text-gray-700 cursor-pointer border-b-2 border-gray-200">
+                        <Link to="#" className="hover:text-gray-700">
+                         AI/ML Solutions
+                        </Link>
+                      </li>
+                      <li className="hover:text-gray-700 cursor-pointer border-b-2 border-gray-200">
+                        <Link
+                          to="#"
+                          className="hover:text-gray-700"
+                        >
+                          Blockchain Solution
+                        </Link>
+                      </li>
+                      <li className="hover:text-gray-700 cursor-pointer border-b-2 border-gray-200">
+                        <Link
+                          to="#"
+                          className="hover:text-gray-700"
+                        >
+                          BPO Service
+                        </Link>
+                      </li>
+                      <li className="hover:text-gray-700 cursor-pointer border-b-2 border-gray-200">
+                        <Link
+                          to="#"
+                          className="hover:text-gray-700"
+                        >
+                          Cloud Computing
+                        </Link>
+                      </li>
+                       <li className="hover:text-gray-700 cursor-pointer border-b-2 border-gray-200">
+                        <Link
+                          to="#"
+                          className="hover:text-gray-700"
+                        >
+                          Software Development
+                        </Link>
+                      </li>
+                      <li className="hover:text-gray-700 cursor-pointer border-b-2 border-gray-200">
+                        <Link
+                          to="#"
+                          className="hover:text-gray-700"
+                        >
+                          CyberSecurity
+                        </Link>
+                      </li>
+                       <li className="hover:text-gray-700 cursor-pointer border-b-2 border-gray-200">
+                        <Link
+                          to="#"
+                          className="hover:text-gray-700"
+                        >
+                         Data Migration
+                        </Link>
+                      </li>
+                       <li className="hover:text-gray-700 cursor-pointer border-b-2 border-gray-200">
+                        <Link
+                          to="#"
+                          className="hover:text-gray-700"
+                        >
+                         EdTech
+                        </Link>
+                      </li>
+                       <li className="hover:text-gray-700 cursor-pointer border-b-2 border-gray-200">
+                        <Link
+                          to="#"
+                          className="hover:text-gray-700"
+                        >
+                         ERP Implementation
+                        </Link>
+                      </li>
+                         <li className="hover:text-gray-700 cursor-pointer border-b-2 border-gray-200">
+                        <Link
+                          to="#"
+                          className="hover:text-gray-700"
+                        >
+                         IOT Staff Augmentation
+                        </Link>
+                      </li>
+                        <li className="hover:text-gray-700 cursor-pointer border-b-2 border-gray-200">
+                        <Link
+                          to="#"
+                          className="hover:text-gray-700"
+                        >
+                         Network Automation
+                        </Link>
+                      </li>
+                       <li className="hover:text-gray-700 cursor-pointer border-b-2 border-gray-200">
+                        <Link
+                          to="#"
+                          className="hover:text-gray-700"
+                        >
+                         Spatial Computing
+                        </Link>
+                      </li>
+                       <li className="hover:text-gray-700 cursor-pointer border-b-2 border-gray-200">
+                        <Link
+                          to="#"
+                          className="hover:text-gray-700"
+                        >
+                         Smart City Services
+                        </Link>
+                      </li>
                     </div>
                   )}
                 </li>
