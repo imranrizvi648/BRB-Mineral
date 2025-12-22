@@ -62,8 +62,8 @@ export default function BannerSection() {
         <h2
           className={`
             text-white 
-            text-lg sm:text-xl md:text-3xl 
-            font-bold 
+            text- sm:text-xl md:text-3xl 
+            font-bold  mt-2
             leading-snug
             transition-all duration-1000 ease-out
             ${isVisible 
@@ -77,23 +77,26 @@ export default function BannerSection() {
         </h2>
 
         {/* RIGHT BUTTON */}
-        <button
-          className={`
-            bg-[#03A2A7] hover:bg-[#02848a]
-            text-white
-            px-5 sm:px-6 md:px-8
-            py-2 sm:py-3
-            rounded-lg
-            font-semibold
-            transition-all duration-1000 ease-out hover:scale-105 active:scale-95
-            ${isVisible 
-              ? 'opacity-100 translate-x-0 delay-200' 
-              : 'opacity-0 translate-x-20'
-            }
-          `}
-        >
-          Learn More
-        </button>
+     <a href="/learn-more">
+  <button
+    className={`
+      bg-[#03A2A7] hover:bg-[#02848a]
+      text-white
+      px-4 sm:px-6 md:px-8
+      py-1 sm:py-3 mb-2
+      rounded-lg
+      font-semibold
+      transition-all duration-1000 ease-out hover:scale-105 active:scale-95
+      ${isVisible 
+        ? 'opacity-100 translate-x-0 delay-200' 
+        : 'opacity-0 translate-x-20'
+      }
+    `}
+  >
+    Learn More
+  </button>
+</a>
+
       </div>
     </section>
   );

@@ -142,20 +142,23 @@ export default function SustainabilitySection() {
           into opportunities that drive progress.
         </p>
 
-        <button
-          className={`
-            bg-[#03A2A7] hover:bg-[#02848a]
-            text-white
-            px-8 md:px-12
-            py-3 md:py-4
-            rounded-lg
-            font-semibold
-            transition-all duration-300 hover:scale-105 active:scale-95
-            ${bottomVisible ? 'opacity-100 translate-y-0 delay-400' : 'opacity-0 translate-y-10'}
-          `}
-        >
-          Contact Us
-        </button>
+       <a href="https://brbgroup.org/cantact-us/">
+  <button
+    className={`
+      bg-[#03A2A7] hover:bg-[#02848a]
+      text-white
+      px-8 md:px-12
+      py-3 md:py-4
+      rounded-lg
+      font-semibold
+      transition-all duration-300 hover:scale-105 active:scale-95
+      ${bottomVisible ? 'opacity-100 translate-y-0 delay-400' : 'opacity-0 translate-y-10'}
+    `}
+  >
+    Contact Us
+  </button>
+</a>
+
       </div>
 
     </section>

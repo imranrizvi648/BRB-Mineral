@@ -62,19 +62,22 @@ export default function WhyChooseSectionWithGallery() {
             leaders in the mineral sector.
           </p>
 
-          <button
-            className="
-              bg-[#03A2A7] hover:bg-[#02848a]
-              text-white
-              px-8 md:px-10 
-              py-3 
-              rounded-lg
-              font-semibold
-              transition-all
-            "
-          >
-            Discover More
-          </button>
+          <a href="https://brbgroup.org/who-we-are/">
+  <button
+    className="
+      bg-[#03A2A7] hover:bg-[#02848a]
+      text-white
+      px-8 md:px-10 
+      py-3 
+      rounded-lg
+      font-semibold
+      transition-all
+    "
+  >
+    Discover More
+  </button>
+</a>
+
         </motion.div>
       </section>
 

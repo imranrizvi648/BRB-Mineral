@@ -24,19 +24,21 @@ export default function TrustedPartnerSection() {
             and reliability in every deal.
           </p>
 
-          <button
-            className="
-              bg-[#03A2A7] hover:bg-[#3F4047]
-              px-6 py-3
-              rounded-lg
-              font-semibold
-              text-white
-              transition
-              w-full sm:w-auto
-            "
-          >
-            Discover How We Create Impact
-          </button>
+       <a href="https://brbgroup.org/who-we-are/">
+  <button
+    className="
+      bg-[#03A2A7] hover:bg-[#3F4047]
+      px-6 py-3
+      rounded-lg
+      font-semibold
+      text-white
+      transition
+      w-full sm:w-auto
+    "
+  >
+    Discover How We Create Impact
+  </button>
+</a>
         </motion.div>
 
         {/* RIGHT SIDE – RESPONSIVE CARD GRID */}

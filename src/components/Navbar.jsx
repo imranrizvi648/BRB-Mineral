@@ -38,18 +38,18 @@ const Navbar = () => {
         onMouseLeave={() => setOpenMenu(null)}
       >
         {/* TOP NAV */}
-        <nav className="w-full md:w-[97%] py-3 md:py-13 gap-6 px-4 md:ml-10 flex items-center justify-between">
+        <nav className="w-full bg-[#F7F8F9] md:w-[97%] py-3 md:py-12 gap-6  md:gap-10 px-4 md:ml-10 flex items-center justify-between">
           {/* LOGO */}
           <div className="flex items-center">
             <img
               src="/BRB-LOGO1-2048x1136-1-1024x568.webp"
               alt="BRB Logo"
-              className="h-12 md:h-18"
+              className="h-12 md:h-19"
             />
           </div>
 
           {/* NAV ITEMS - Desktop Only */}
-          <ul className="hidden md:flex pl-0 ml-0 gap-6 font-medium text-[12.5px] text-black">
+         <ul className="hidden md:flex pl-0 ml-0 gap-6 font-normal text-[13px] whitespace-nowrap text-black">
             <li
               onMouseEnter={() => setOpenMenu("about")}
               className={isActive("/about")}
@@ -114,12 +114,16 @@ const Navbar = () => {
           {/* RIGHT SIDE */}
           <div className="flex items-center gap-3 md:gap-5 md:pr-10 md:pl-10 md:mr-18">
             <Link to="https://brbgroup.org/cantact-us/">
-              <button className="hidden md:block px-5 py-1.5 border border-black rounded-xl text-sm font-medium hover:bg-black hover:text-white transition">
+              <button className="hidden md:block px-5 py-1.5 border border-black rounded-xl text-sm font-normal hover:bg-black hover:text-white transition">
                 Lets Connect
               </button>
             </Link>
             <Search className="hidden md:block w-5 h-5 cursor-pointer" />
-            <Globe className="hidden md:block w-8 h-8 cursor-pointer text-blue-600" />
+            <img
+  src="/download.svg" // replace with your image path
+  alt="Globe"
+  className="hidden md:block w-8 h-8 cursor-pointer"
+/>
 
             {/* MOBILE MENU BUTTON - Right Side */}
             <button
@@ -149,6 +153,7 @@ const Navbar = () => {
             {/* QUICK LINKS */}
             <div className="w-1/4">
               <ul className="space-y-2 text-[16px] text-gray-500 ">
+                <p className="text-[18px] mb-2 font-medium text-gray-800">Who are we?</p>
                 <li className="hover:text-gray-800">
                   <a href="https://brbgroup.org/who-we-are/" target="_blank">
                     Chairman's Message
@@ -171,34 +176,35 @@ const Navbar = () => {
             {/* QUICK LINKS */}
             <div className="w-1/4">
               <ul className="space-y-2 text-[16px] text-gray-500 ">
+                   <p className="text-[18px] mb-2 font-medium text-gray-800">Business Units</p> 
                 <li className="hover:text-gray-800">
                   <a href="https://brbgroup.org/who-we-are/" target="_blank">
-                    Brb Builders and Developer
+                    BRB Builders and Developer
                   </a>
                 </li>
                 <li className="hover:text-gray-800">
                   <a href="https://brbgroup.org/brb-foundation/">
-                    Brb Foundation
+                    BRB Foundation
                   </a>
                 </li>
                 <li className="hover:text-gray-800">
                   <a href="https://brbgroup.org/brb-technologoies/">
-                    Brd Technologies
+                    BRB Technologies
                   </a>
                 </li>
                 <li className="hover:text-gray-800">
                   <a href="https://brbgroup.org/brb-marketing-pvt-ltd/">
-                    Brb Markeeting
+                    BRB Markeeting
                   </a>
                 </li>
                 <li className="hover:text-gray-800">
                   <a href="https://brbgroup.org/brb-engineering-pvt-ltd/">
-                    Brb Engineering
+                    BRB Engineering
                   </a>
                 </li>
                 <li className="hover:text-gray-800">
                   <a href="https://brbgroup.org/brb-urbanscape-pvt-ltd/">
-                    Brb Urbanscape
+                    BRB Urbanscape
                   </a>
                 </li>
               </ul>
@@ -206,6 +212,7 @@ const Navbar = () => {
             {/* EXTRA */}
             <div className="w-1/4">
               <ul className="space-y-2 text-[16px] text-gray-500 ">
+                 <p className="text-[18px] mb-2 font-medium text-gray-800">Communities</p>
                 <li className="hover:text-gray-800">
                   <a href="https://brbgroup.org/communities/">
                     Oasis Park Residencia

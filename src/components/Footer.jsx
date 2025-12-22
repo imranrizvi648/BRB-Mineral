@@ -11,7 +11,7 @@ import {
 const Footer = () => {
   return (
     <footer className="bg-[#F5F5F5] px-6 mt-10">
-      <div className="max-w-[95%] mx-auto rounded-2xl p-6 md:p-10">
+      <div className="max-w-[95%] mx-auto rounded-2xl p-6 md:p-15">
 
         {/* FLEX WRAPPER */}
         <div className="flex flex-col lg:flex-row lg:justify-center lg:items-start gap-10 lg:gap-30">
@@ -131,9 +131,9 @@ const Footer = () => {
         </div>
 
         {/* Divider */}
-        <hr className="my-8 lg:mt-20"/>
+        <hr className="my-8 lg:mt-20 text-gray-400"/>
 
-        <p className="text-center text-gray-500 text-sm">
+        <p className="text-center text-gray-400 text-sm">
   © {new Date().getFullYear()} BRB Group, All Rights Reserved.
 </p>
       </div>

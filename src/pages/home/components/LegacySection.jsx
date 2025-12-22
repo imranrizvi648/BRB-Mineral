@@ -90,20 +90,22 @@ export default function LegacySection() {
           </p>
 
           <div className="flex md:block justify-start md:justify-center">
-            <button
-              className="
-                bg-[#03A2A7] hover:bg-[#02848a]
-                text-white
-                px-6 md:px-8 
-                py-3
-                rounded-lg
-                font-semibold
-                transition-all
-                duration-300
-              "
-            >
-              Discover Our Legacy
-            </button>
+           <a href="https://brbgroup.org/who-we-are/">
+  <button
+    className="
+      bg-[#03A2A7] hover:bg-[#02848a]
+      text-white
+      px-6 md:px-8 
+      py-3
+      rounded-lg
+      font-semibold
+      transition-all
+      duration-300
+    "
+  >
+    Discover Our Legacy
+  </button>
+</a>
           </div>
         </motion.div>
 
