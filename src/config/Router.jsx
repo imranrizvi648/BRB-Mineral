@@ -49,7 +49,7 @@ export default function App() {
          <Route path="/mineral/bauxite" element={<BauxitePage />} />
          <Route path="/mineral/talc" element={<TalcPage />} />
         
-        // BRB Exploration Roites
+        //BRB Exploration Roites
         <Route path="/brb-exploration" element={<BrbExploration />} />
         <Route path="/brb-exploration/placergold" element={<PlacerGold/>}/>
         <Route path="/brb-exploration/blacksand" element={<BlackSand/>}/>

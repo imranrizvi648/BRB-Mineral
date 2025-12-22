@@ -16,6 +16,7 @@ export default function MineralsPortfolioSection() {
       img: "/portfolioImage/phosphate.webp",
       link: "/mineral/phosphate"
     },
+    
     {
       name: "Iron Ore",
       desc: "Powering industry and infrastructure – backbone of industrial development and steel production.",
