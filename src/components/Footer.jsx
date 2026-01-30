@@ -90,18 +90,17 @@ const Footer = () => {
             <h3 className="font-normal text-[22px] mb-3 text-gray-800">Contact us</h3>
             <ul className="space-y-1 text-gray-500 max-w-[350px]">
               <li className="hover:text-[#E78424]">
-                <a href="tel:+9221111272111">+92 21 111 272 111</a>
+                <a href="tel:+9221111272111">+92 (21) 34837014-6</a>
               </li>
-              <li className="hover:text-[#E78424]">
+              {/* <li className="hover:text-[#E78424]">
                 <a href="tel:+92213483701417">+92 21 348 37014-17</a>
-              </li>
+              </li> */}
               <li className="hover:text-[#E78424]">
                 <a href="mailto:info@brbgroup.pk">info@brbgroup.pk</a>
               </li>
               <li className="hover:text-[#E78424]">
                 <a href="https://maps.app.goo.gl/24u4SKe4ab8dLwuaA">
-                  Head Office C-42, Block-8, Opp. Hakeem Saeed Park,
-                  Gulshan-e-Iqbal, Karachi, Pakistan.
+                  Head Office: Suite# 101 & 102 First Floor Rufi Trade Centre, SB-29, Block 13C Gulshan-e-Iqbal, Main University Road, Karachi, P.O.Box No.75300, Pakistan
                 </a>
               </li>
             </ul>
