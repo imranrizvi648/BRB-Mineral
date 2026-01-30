@@ -5,7 +5,7 @@ export default function HeroSection() {
   return (
     <section
       className="
-        relative w-full h-[70vh] md:h-[90hv] 
+        relative w-full h-[70vh] md:h-[90vh] 
         bg-cover bg-center bg-no-repeat 
         flex items-center justify-center
       "
