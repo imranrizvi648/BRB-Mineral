@@ -162,16 +162,34 @@ export default function AboutSection() {
           </div>
         </div>
 
-        {/* ---------------- CTA SECTION ---------------- */}
-        <div className="text-center bg-white rounded-3xl p-8 sm:p-10  ">
-          <h3 className="text-2xl sm:text-3xl font-bold mb-4 text-gray-900">
-            Part of <span className="text-[#03A2A7]">BRB Group</span>
-          </h3>
+       {/* ---------------- CTA SECTION ---------------- */}
+<div className="relative overflow-hidden rounded-3xl group">
+  {/* Background Image Container */}
+  <div 
+    className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+    style={{ 
+      backgroundImage: `url('/path-to-your-image.jpg')`, // Apni image ka path yahan dalein
+    }}
+  />
 
-          <p className="text-gray-600 text-base md:text-lg max-w-3xl mx-auto ">
-            As a subsidiary of BRB Group, we benefit from strong corporate governance, financial stability, and long-term success across all sectors.
-          </p>
-        </div>
+  {/* Dark Overlay (Taake text saaf nazar aaye) */}
+  <div className="absolute inset-0 bg-black/50 backdrop-blur-[2px]" />
+
+  {/* Content */}
+  <div className="relative z-10 text-center p-12 sm:p-20 flex flex-col items-center justify-center min-h-[300px]">
+    <h3 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-6 text-white leading-tight">
+      Part of <span className="text-[#03A2A7]">BRB Group</span>
+    </h3>
+
+    <p className="text-gray-200 text-base md:text-xl max-w-2xl mx-auto leading-relaxed font-medium">
+      As a subsidiary of BRB Group, we benefit from strong corporate governance, 
+      financial stability, and long-term success across all sectors.
+    </p>
+
+    {/* Optional: Add a subtle border or glass effect button if needed */}
+    <div className="mt-8 h-1 w-20 bg-[#03A2A7] rounded-full" />
+  </div>
+</div>
 
       </div>
     </div>

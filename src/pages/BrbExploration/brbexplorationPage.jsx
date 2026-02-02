@@ -4,19 +4,24 @@ import WhoWeAreSection from './Components/WhoWeAreSection'
 import OurOperationsSection from './Components/OurOperationsSection'
 import WhyChooseBRB from './Components/WhyChooseBRBSection'
 import SustainabilitySection from './Components/SustainabilitySection'
-import AboutUsSection from './Components/AboutUsSection'
+// import AboutUsSection from './Components/AboutUsSection'
 import VideoSection from './Components/videoSection'
+import AboutSection from './Components/AboutSection'
+import CTA from './Components/CTA'
 const brbexplorationPage = () => {
   return (
     <div>
       
 <HeroSection/>
-<AboutUsSection/>
+<AboutSection/>
+
+{/* <AboutUsSection/> */}
 <OurOperationsSection/>
 <VideoSection />
 <WhoWeAreSection/>
 <WhyChooseBRB/>
 <SustainabilitySection/>
+<CTA/>
 
 
     </div>
