@@ -107,10 +107,7 @@ function ProductCard({ mineral }) {
             </span>
           </div>
 
-          {/* Badge */}
-          <div className="absolute top-4 right-4 px-3 py-1 bg-[#03A2A7]/30 backdrop-blur-md border border-[#03A2A7]/40 rounded-full opacity-0 lg:group-hover:opacity-100 transition-all duration-500">
-            <span className="text-[#03A2A7] text-xs font-bold">PREMIUM</span>
-          </div>
+          
         </div>
       </Link>
     </motion.div>
