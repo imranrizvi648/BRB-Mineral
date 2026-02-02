@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const CTA = ({ bgImage = "/path-to-your-image.jpg" }) => {
+const CTA = ({ bgImage = "/brbExploration/cta.webp" }) => {
   return (
     // 'hv' ko 'vh' kiya aur flexbox use kiya taake content center rahe
     <section className="w-full h-[50vh] min-h-[400px] relative overflow-hidden flex items-center justify-center">
@@ -41,15 +41,6 @@ const CTA = ({ bgImage = "/path-to-your-image.jpg" }) => {
           As a trusted subsidiary of BRB Group, we benefit from strong corporate governance, 
           financial stability, and long-term success across all sectors.
         </motion.p>
-
-        {/* Contact Button */}
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="px-8 py-2 border-2 border-white text-white rounded-full font-bold text-base hover:bg-[#03A2A7] hover:border-[#03A2A7] transition-all duration-300 backdrop-blur-md"
-        >
-          Contact Us Today
-        </motion.button>
 
       </div>
     </section>

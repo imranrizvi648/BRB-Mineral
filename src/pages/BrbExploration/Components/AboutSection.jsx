@@ -127,30 +127,33 @@ export default function AboutSection() {
             </div>
           </motion.div>
 
-          {/* Image Section */}
-          <motion.div
-            className="relative"
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <img
-              src="/BrbMineralAndMetal/HomePage/overview.webp"
-              alt="Mining Operations"
-              className="rounded-2xl shadow-2xl"
-            />
-            <motion.div
-              className="absolute -bottom-6 -right-6 bg-[#03A2A7] text-white p-6 md:p-8 rounded-xl shadow-xl"
-              initial={{ scale: 0.8, opacity: 0 }}
-              whileInView={{ scale: 1, opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.5 }}
-            >
-              <p className="text-2xl md:text-4xl font-bold mb-1 md:mb-2">Part of</p>
-              <p className="text-xl md:text-2xl font-semibold">BRB Group</p>
-            </motion.div>
-          </motion.div>
+         {/* Image Section */}
+<motion.div
+  className="relative"
+  initial={{ opacity: 0, x: 50 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.8 }}
+>
+  <img
+    src="/brbExploration/vision.webp"
+    alt="Mining Operations"
+    /* h-[500px] ya h-[600px] se height barh jayegi, object-cover lagana zaroori hai */
+    className="w-full h-[200px] md:h-[350px] lg:h-[450px] rounded-2xl shadow-2xl object-cover"
+  />
+  
+  {/* Floating Card */}
+  <motion.div
+    className="absolute -bottom-6 -right-6 bg-[#03A2A7] text-white p-6 md:p-8 rounded-xl shadow-xl z-10"
+    initial={{ scale: 0.8, opacity: 0 }}
+    whileInView={{ scale: 1, opacity: 1 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.8, delay: 0.5 }}
+  >
+    <p className="text-2xl md:text-4xl font-bold mb-1 md:mb-2">Part of</p>
+    <p className="text-xl md:text-2xl font-semibold">BRB Group</p>
+  </motion.div>
+</motion.div>
         </div>
 
         {/* Core Values */}
