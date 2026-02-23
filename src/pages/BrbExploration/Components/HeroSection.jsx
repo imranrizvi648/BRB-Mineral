@@ -60,23 +60,25 @@ export default function HeroSection() {
 
             {/* Linked Button Section */}
                   <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, delay: 1 }}
-        >
-          <a
-            href="#operations"
-            className="cursor-pointer inline-block 
-                       px-6 py-2.5 sm:px-10 sm:py-3  /* Mobile pe chota, bari screens pe normal */
-                       mt-6 sm:mt-7 
-                       bg-[#03A2A7] text-white font-bold rounded 
-                       transition-all duration-300 
-                       text-xs sm:text-base          /* Mobile pe font thora mazeed chota */
-                       active:scale-95"               /* Click karne pe tactile feel */
-          >
-            BRB CSR Impact Report 2022-2023
-          </a>
-        </motion.div>
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5, delay: 1 }}
+                >
+                  <a
+                    href="/Mineral Report_compressed.pdf" // Agar public folder ke andar direct hai
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="cursor-pointer inline-block 
+                               px-6 py-2.5 sm:px-10 sm:py-3 
+                               mt-6 sm:mt-7 
+                               bg-[#03A2A7] text-white font-bold rounded 
+                               transition-all duration-300 
+                               text-xs sm:text-base 
+                               active:scale-95"
+                  >
+                    View Impact Report 2022-2023
+                  </a>
+                </motion.div>
 
       </div>
     </section>
