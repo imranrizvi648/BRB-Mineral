@@ -144,7 +144,7 @@ export default function MineralsPortfolioSection() {
                   />
 
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-500" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#03A2A7]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            
                 </div>
 
                 {/* Content */}
@@ -154,9 +154,9 @@ export default function MineralsPortfolioSection() {
                   opacity-100 translate-y-0 max-h-full
                   lg:opacity-0 lg:translate-y-4 lg:max-h-0
                   lg:group-hover:opacity-100 lg:group-hover:-translate-y-8 lg:group-hover:max-h-40
-                  transition-all duration-500"
+                  transition-all duration-500 group-hover:bg-black/50 rounded-4xl"
                 >
-                  <h3 className="text-lg sm:text-xl font-bold text-white mb-1 lg:group-hover:text-[#03A2A7] transition-colors duration-300">
+                  <h3 className="text-lg sm:text-xl md:text-[21px] text-center  font-bold text-white mb-1 lg:group-hover:text-white transition-colors duration-300">
                     {m.name}
                   </h3>
 
@@ -164,11 +164,7 @@ export default function MineralsPortfolioSection() {
 
                   <p
                     className="
-                    text-gray-300 text-sm sm:text-base leading-relaxed 
-                    opacity-100 max-h-full
-                    lg:opacity-0 lg:max-h-0  
-                    lg:group-hover:max-h-36 lg:group-hover:opacity-100
-                    transition-all duration-500 overflow-hidden mt-1"
+                    text-gray-100 text-sm mt-2 text-center lg:opacity-0 lg:group-hover:opacity-100 transition-all duration-500"
                   >
                     {m.desc}
                   </p>
@@ -177,7 +173,7 @@ export default function MineralsPortfolioSection() {
                     <motion.button
                       whileHover={{ scale: 1.07 }}
                       whileTap={{ scale: 0.95 }}
-                      className="mt-3 px-4 py-2 bg-[#03A2A7] text-white rounded-full font-semibold text-sm shadow-lg opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-all duration-500"
+                      className="mt-3 px-4 py-2 items-center text-center bg-[#03A2A7] text-white rounded-full font-semibold text-sm shadow-lg opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-all duration-500"
                     >
                       Explore More
                     </motion.button>

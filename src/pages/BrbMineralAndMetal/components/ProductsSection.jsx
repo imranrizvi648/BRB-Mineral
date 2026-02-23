@@ -78,34 +78,43 @@ function ProductCard({ mineral }) {
             <img
               src={mineral.img}
               alt={mineral.name}
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 group-hover:rotate-1"
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 group-hover:rotate-1 "
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black/70" />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black/50  transition-colors duration-500" />
           </div>
 
           {/* Content */}
-          <div
-            className="
-            absolute bottom-0 w-full p-5 flex flex-col justify-end
-            opacity-100 translate-y-0
-            lg:opacity-0 lg:translate-y-8
-            lg:group-hover:opacity-100 lg:group-hover:-translate-y-8
-            transition-all duration-500"
-          >
-            <h3 className="text-xl font-bold text-white mb-1 lg:group-hover:text-[#03A2A7] transition-colors duration-300">
-              {mineral.name}
-            </h3>
+<div
+  className="
+    absolute bottom-0 w-full p-5 
+    flex flex-col items-center justify-end  {/* Yahan items-center add kiya */}
+    opacity-100 translate-y-0
+    lg:opacity-0 lg:translate-y-8
+    lg:group-hover:opacity-100 lg:group-hover:-translate-y-8 rounded-4xl group-hover:bg-black/50
+    transition-all duration-500 "
+>
+  <h3 className="text-xl md:text-[21px] text-center font-bold text-white mb-1">
+    {mineral.name}
+  </h3>
 
-            <div className="w-14 h-1 bg-gradient-to-r from-[#03A2A7] to-white rounded-full lg:group-hover:w-full transition-all duration-500"></div>
+  {/* Divider Line */}
+  <div className="w-14 h-1 bg-gradient-to-r from-[#03A2A7] to-white rounded-full lg:group-hover:w-full transition-all duration-500"></div>
 
-            <p className="text-gray-300 text-sm mt-2 lg:opacity-0 lg:group-hover:opacity-100 transition-all duration-500">
-              {mineral.desc}
-            </p>
+  <p className="text-gray-100 text-sm mt-2 text-center lg:opacity-0 lg:group-hover:opacity-100 transition-all duration-500">
+    {mineral.desc}
+  </p>
 
-            <span className="mt-3 block w-full text-center px-4 py-2 bg-[#03A2A7] text-white rounded-full text-sm font-semibold cursor-pointer opacity-0 lg:group-hover:opacity-100 transition-all duration-500">
-              Explore More
-            </span>
-          </div>
+  {/* Button Wrapper - isse button absolute center ho jayega */}
+  <Link to={mineral.link} className="flex justify-center w-full">
+    <motion.button
+      whileHover={{ scale: 1.07 }}
+      whileTap={{ scale: 0.95 }}
+      className="mt-3 px-6 py-2 bg-[#03A2A7] text-white rounded-full font-semibold text-sm shadow-lg opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-all duration-500"
+    >
+      Explore More
+    </motion.button>
+  </Link>
+</div>
 
           
         </div>

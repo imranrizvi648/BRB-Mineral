@@ -62,40 +62,50 @@ export default function WhoWeAreAndMinerals() {
               className="relative group"
             >
               <div
-                className="relative bg-[#111]/70 border border-[#03A2A7]/30 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500"
+                className="relative rounded-2xl overflow-hidden 
+                  bg-[#111]/70 shadow-xl animated-border
+                  hover:shadow-2xl transition-all duration-500"
               >
                 {/* IMAGE */}
                 <div className="relative h-72 overflow-hidden">
                   <img
                     src={m.img}
-                    className="w-full h-full object-cover transition-all duration-700 group-hover:scale-125 group-hover:rotate-2"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 group-hover:rotate-1 "
                   />
-                  <div className="absolute inset-0 bg-linear-to-t from-black via-black/60 to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-500" />
+                  <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black/50  transition-colors duration-500" />
                 </div>
 
-                {/* CONTENT */}
-                <div
-                  className="absolute bottom-0 w-full p-5 opacity-100 lg:opacity-0 lg:translate-y-4 lg:max-h-0 
-                  lg:group-hover:opacity-100 lg:group-hover:-translate-y-10 lg:group-hover:max-h-44 transition-all duration-500"
-                >
-                  <h3 className="text-2xl font-bold text-white mb-1 lg:group-hover:text-[#03A2A7] transition-colors duration-300">
-                    {m.name}
-                  </h3>
+               {/* CONTENT */}
+<div
+  className=" absolute bottom-0 w-full p-5 
+    flex flex-col items-center justify-end  {/* Yahan items-center add kiya */}
+    opacity-100 translate-y-0
+    lg:opacity-0 lg:translate-y-8
+    lg:group-hover:opacity-100 lg:group-hover:-translate-y-8 rounded-4xl group-hover:bg-black/50
+    transition-all duration-500 "
+>
+  <h3 className="text-lg sm:text-xl md:text-[21px] text-center text-white mb-1 font-bold transition-all duration-500 delay-75">
+    {m.name}
+  </h3>
+  
+  <div className="w-12 h-1 bg-gradient-to-r from-[#03A2A7] to-white rounded-full lg:group-hover:w-3/4 transition-all duration-700 delay-100 mb-2" />
 
-                  <p className="text-gray-300 text-sm mt-2 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-all duration-500">
-                    {m.desc}
-                  </p>
+  <p className="text-gray-100 text-sm text-center opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-all duration-700 delay-150 leading-relaxed">
+    {m.desc}
+  </p>
 
-                  <Link to={m.link}>
-                    <motion.button
-                      whileHover={{ scale: 1.07 }}
-                      whileTap={{ scale: 0.95 }}
-                      className="mt-4 px-5 py-2 cursor-pointer bg-[#03A2A7] text-white rounded-full font-semibold text-sm shadow-lg opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-all duration-500"
-                    >
-                      Explore More
-                    </motion.button>
-                  </Link>
-                </div>
+  {/* Button Wrapper */}
+  <Link to={m.link} className="w-full flex justify-center">
+    <motion.button
+      whileHover={{ scale: 1.07 }}
+      whileTap={{ scale: 0.95 }}
+      className="mt-4 px-6 py-2 bg-[#03A2A7] text-white rounded-full font-semibold text-sm shadow-lg 
+                 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-all duration-700 delay-200"
+    >
+      Explore More
+    </motion.button>
+  </Link>
+</div>
               </div>
             </motion.div>
           ))}
