@@ -39,14 +39,15 @@ const Navbar = () => {
       >
         {/* TOP NAV */}
         <nav className="w-full  md:w-[97%] py-3 md:py-12 gap-6  md:gap-10 px-4 md:ml-10 flex items-center justify-between">
-          {/* LOGO */}
-          <div className="flex items-center">
-            <img
-              src="/BRB-LOGO1-2048x1136-1-1024x568.webp"
-              alt="BRB Logo"
-              className="h-12 md:h-19"
-            />
-          </div>
+         <div className="flex items-center">
+  <a href="https://brbgroup.org/" className="cursor-pointer"> 
+    <img
+      src="/BRB-LOGO1-2048x1136-1-1024x568.webp"
+      alt="BRB Logo"
+      className="h-12 md:h-20 object-contain transition-transform duration-300 hover:scale-105" 
+    />
+  </a>
+</div>
 
           {/* NAV ITEMS - Desktop Only */}
          <ul className="hidden md:flex pl-0 ml-0 gap-6 font-normal text-[13px] whitespace-nowrap text-black">

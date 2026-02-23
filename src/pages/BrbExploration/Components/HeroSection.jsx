@@ -65,7 +65,7 @@ export default function HeroSection() {
                   transition={{ duration: 0.5, delay: 1 }}
                 >
                   <a
-                    href="/Mineral Report_compressed.pdf" // Agar public folder ke andar direct hai
+                    href="/report.pdf" // Agar public folder ke andar direct hai
                     target="_blank"
                     rel="noopener noreferrer"
                     className="cursor-pointer inline-block 
