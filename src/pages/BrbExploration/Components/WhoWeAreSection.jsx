@@ -19,7 +19,7 @@ export default function WhoWeAreAndMinerals() {
       link: "/brb-exploration/placergold",
     },
     {
-      name: "Black Sand Minerals",
+      name: "Black Sand",
       desc: "Magnetite-rich heavy mineral sands used in industrial and metallurgical applications.",
       img: "/brbExploration/Black sand product.webp",
       link: "/brb-exploration/blacksand",

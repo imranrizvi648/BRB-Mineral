@@ -91,7 +91,7 @@ export default function WhyChooseUsSection() {
 </motion.div>
 
               <motion.h3 
-                className="text-lg font-bold text-[#03A2A7] mb-2 -mt-4 group-hover:text-white transition-colors duration-300"
+                className="text-lg font-bold text-gray-100 mb-2 -mt-4 group-hover:text-white transition-colors duration-300"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.2 }}
               >

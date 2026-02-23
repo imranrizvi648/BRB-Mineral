@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 export default function HeroSection() {
-  const heroImg = "/brbmineralandexploration/hero.webp";
+  const heroImg = "/BrbMineralAndMetal/HomePage/hero.webp";
 
   return (
     <section className="relative w-full h-[70vh] md:h-[90vh] overflow-hidden flex items-center justify-center bg-black">
@@ -35,7 +35,7 @@ export default function HeroSection() {
           transition={{ duration: 1, delay: 0.3 }}
         >
           <img
-            src="/brbmineralandexploration/BRB Minerals logo-7 (3).png"
+            src="/BrbMineralAndMetal/HomePage/BRB Minerals logo.png"
             alt="Logo"
             className="w-32 sm:w-40 md:w-48 lg:w-56 xl:w-64 mx-auto object-contain"
           />
@@ -49,7 +49,7 @@ export default function HeroSection() {
           transition={{ duration: 1, delay: 0.6 }}
         >
           <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4 tracking-tight">
-            Exploring, Extracting & Delivering the Metals that Power Tomorrow
+            Exploring, Processing, Extracting & Delivering the Metals that Power Tomorrow
           </h1>
 
           <p className="text-sm sm:text-lg md:text-xl leading-relaxed opacity-90 font-light">

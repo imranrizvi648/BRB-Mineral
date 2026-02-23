@@ -1,6 +1,11 @@
 export default function OperationSection() {
   const items = [
     {
+      title: "Exploration",
+      desc: "We conduct detailed geological surveys to locate high-potential mineral deposits and assess site feasibility using modern techniques, ensuring minimal environmental impact.",
+      img: "/exploration.webp",
+    },
+    {
       title: "Extraction",
       desc: "We carefully mine high-grade minerals using advanced and sustainable methods. Our focus is on efficiency while preserving the natural environment.",
       img: "/Extraction.webp",
@@ -35,29 +40,33 @@ export default function OperationSection() {
       </div>
 
       {/* Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
         {items.map((item, i) => (
           <div
             key={i}
             className="
-              bg-white p-6 md:p-7 rounded-2xl 
-              border border-gray-200 
-              shadow-xl hover:shadow-2xl 
+              bg-white p-5 rounded-2xl
+              border border-gray-200
+              shadow-lg hover:shadow-xl
               transition duration-300
               flex flex-col items-center text-center
+              min-h-[360px]
             "
           >
+            {/* Icon */}
             <img
               src={item.img}
               alt={item.title}
-              className="w-20 h-20 md:w-24 md:h-24 object-contain mb-4"
+              className="w-16 h-16 md:w-20 md:h-20 object-contain mb-4"
             />
 
-            <h3 className="text-xl md:text-2xl font-bold mb-2">
+            {/* Title */}
+            <h3 className="text-lg md:text-xl font-semibold mb-2">
               {item.title}
             </h3>
 
-            <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+            {/* Description */}
+            <p className="text-gray-600 text-sm leading-relaxed line-clamp-5">
               {item.desc}
             </p>
           </div>
