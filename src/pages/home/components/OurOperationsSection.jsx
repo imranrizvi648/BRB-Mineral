@@ -3,7 +3,7 @@ export default function OperationSection() {
     {
       title: "Exploration",
       desc: "We conduct detailed geological surveys to locate high-potential mineral deposits and assess site feasibility using modern techniques, ensuring minimal environmental impact.",
-      img: "/exploration.webp",
+      img: "/471012 (1).webp",
     },
     {
       title: "Extraction",

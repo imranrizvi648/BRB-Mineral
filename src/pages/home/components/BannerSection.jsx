@@ -38,7 +38,7 @@ export default function BannerSection() {
     >
       {/* Background Image */}
       <img
-        src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200"
+        src="/homebanner.jpg"
         alt="banner"
         className="w-full h-full object-cover"
       />
