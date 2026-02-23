@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function HeroSection() {
   return (
-    <section className="relative w-full h-[70vh] md:h-[90vh] overflow-hidden flex items-center justify-center bg-black">
+    <section className="relative w-full h-[70vh] md:h-[97vh] overflow-hidden flex items-center justify-center bg-black">
       
       {/* Background Image - Optimized for Fastest Load */}
       <img
@@ -56,6 +56,26 @@ export default function HeroSection() {
             and extraction of high-value natural resources including Placer Gold
             and Black Sand minerals.
           </p>
+        </motion.div>
+
+            {/* Linked Button Section */}
+                  <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, delay: 1 }}
+        >
+          <a
+            href="#operations"
+            className="cursor-pointer inline-block 
+                       px-6 py-2.5 sm:px-10 sm:py-3  /* Mobile pe chota, bari screens pe normal */
+                       mt-6 sm:mt-7 
+                       bg-[#03A2A7] text-white font-bold rounded 
+                       transition-all duration-300 
+                       text-xs sm:text-base          /* Mobile pe font thora mazeed chota */
+                       active:scale-95"               /* Click karne pe tactile feel */
+          >
+            BRB CSR Impact Report 2022-2023
+          </a>
         </motion.div>
 
       </div>
