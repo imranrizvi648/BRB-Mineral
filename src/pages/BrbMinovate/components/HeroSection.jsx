@@ -7,7 +7,7 @@ export default function HeroSection() {
       
       {/* Background Image - Optimized for Fastest Load */}
       <img
-        src="/brb-minovate/minovateBanner.webp"
+        src="/brb-minovate/home/minovateBanner.webp"
         alt="Exploration Banner"
         className="absolute inset-0 w-full h-full object-cover z-0"
         loading="eager" 
@@ -34,7 +34,7 @@ export default function HeroSection() {
           transition={{ duration: 1, delay: 0.3 }}
         >
           <img
-            src="/brb-minovate/brb-monivate-logo.webp"
+            src="/brb-minovate/home/brb-monivate-logo.webp"
             alt="Logo"
             className="w-32 sm:w-48 md:w-56 lg:w-64 mx-auto object-contain"
           />
