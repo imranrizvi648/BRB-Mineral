@@ -457,7 +457,19 @@ const Navbar = () => {
                         >
                           BRB Exploration (PVT) LTD
                         </Link>
+
+                      
+
                       </li>
+ <li className="hover:text-gray-700 cursor-pointer border-b-2 border-gray-200">
+ <Link
+                          to="/brb-minovate"
+                          className="hover:text-gray-700"
+                        >
+                          BRB Minovate (PVT) LTD
+                        </Link>
+                        </li>
+
                     </div>
                   )}
                 </li>
@@ -985,6 +997,16 @@ const Navbar = () => {
               >
                 BRB Exploration (PVT) LTD
               </Link>
+
+               <li>
+              <Link
+                to="/brb-minovate"
+                onClick={closeAllMobileMenus}
+                className="block py-2 hover:text-blue-600"
+              >
+                BRB Minovate (PVT) LTD
+              </Link>
+            </li>
             </li>
           </ul>
         )}
