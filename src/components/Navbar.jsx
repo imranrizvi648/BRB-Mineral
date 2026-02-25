@@ -434,7 +434,11 @@ const Navbar = () => {
                   {subOpen === "minerals" && (
                     <div className="absolute left-full top-[30%]  -translate-y-1/2 p-4 pt-0 gap-2 z-50 flex-col ml-0 text-sm flex bg-white shadow-lg rounded-md w-48 ">
                       <li className="hover:text-gray-700 cursor-pointer border-b-2 border-gray-200">
-                        <Link to="/mineral" className="hover:text-gray-700">
+                        <Link to="/mineralloop
+                        
+                        
+                        
+                        " className="hover:text-gray-700">
                           BRB Mineraloop (PVT) LTD
                         </Link>
                       </li>
@@ -943,7 +947,7 @@ const Navbar = () => {
     )
   }
 >
-  <Link href="/minerals" className="flex-1">
+  <Link href="/mineralloop" className="flex-1">
     Mineral
   </Link>
   <ChevronDown
@@ -957,7 +961,7 @@ const Navbar = () => {
           <ul className="pl-4 mt-2 space-y-2 text-sm text-gray-600">
             <li>
               <Link
-                to="/mineral"
+                to="/mineralloop"
                 onClick={closeAllMobileMenus}
                 className="block py-2 hover:text-blue-600"
               >

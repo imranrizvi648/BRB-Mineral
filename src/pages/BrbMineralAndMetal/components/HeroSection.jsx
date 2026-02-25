@@ -5,7 +5,7 @@ export default function HeroSection() {
   const heroImg = "/BrbMineralAndMetal/HomePage/hero.webp";
 
   return (
-    <section className="relative w-full h-[70vh] md:h-[97vh] overflow-hidden flex items-center justify-center bg-black">
+    <section className="relative w-full h-[83vh] md:h-[97vh] overflow-hidden flex items-center justify-center bg-black">
       
       {/* BACKGROUND IMAGE - Industry Standard Optimization */}
       <img

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function HeroSection() {
   return (
     <section
-      className="relative w-full h-[70vh] md:h-[90vh] overflow-hidden flex items-center justify-center bg-black"
+      className="relative w-full h-[83vh] md:h-[90vh] overflow-hidden flex items-center justify-center bg-black"
     >
       {/* BACKGROUND IMAGE - Isay priority di hai taake sabse pehle ye load ho */}
       <img

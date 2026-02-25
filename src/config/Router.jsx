@@ -40,7 +40,7 @@ export default function App() {
        
        // mineral Routes
         <Route index element={<Home />} />
-         <Route path="/mineral" element={<Home />} />
+         <Route path="/mineralloop" element={<Home />} />
         {/* <Route path="/mineral/flourite" element={<FlouritePage />} /> */}
          <Route path="/mineral/phosphate" element={<PhosphatePage />} />
          <Route path="/mineral/flourite" element={<FlouritePage/>}/>
