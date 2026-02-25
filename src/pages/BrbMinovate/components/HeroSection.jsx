@@ -34,7 +34,7 @@ export default function HeroSection() {
           transition={{ duration: 1, delay: 0.3 }}
         >
           <img
-            src="/brb-minovate/BRB Minovate.webp"
+            src="/brb-minovate/brb-monivate-logo.webp"
             alt="Logo"
             className="w-32 sm:w-48 md:w-56 lg:w-64 mx-auto object-contain"
           />

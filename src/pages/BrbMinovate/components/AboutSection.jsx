@@ -135,7 +135,7 @@ export default function AboutSection() {
   transition={{ duration: 0.8 }}
 >
   <img
-    src="/brb-minovate/overview.webp"
+    src="/brb-minovate/about.webp"
     alt="Mining Operations"
     /* h-[500px] ya h-[600px] se height barh jayegi, object-cover lagana zaroori hai */
     className="w-full h-[200px] md:h-[350px] lg:h-[450px] rounded-2xl shadow-2xl object-cover"
